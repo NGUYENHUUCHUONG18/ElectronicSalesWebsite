@@ -1,0 +1,6 @@
+E:\webform\banhang\banhangdientu\bin\banhangdientu.dll.config
+E:\webform\banhang\banhangdientu\bin\banhangdientu.dll
+E:\webform\banhang\banhangdientu\bin\banhangdientu.pdb
+E:\webform\banhang\banhangdientu\obj\Debug\banhangdientu.dll
+E:\webform\banhang\banhangdientu\obj\Debug\banhangdientu.pdb
+E:\webform\banhang\banhangdientu\obj\Debug\banhangdientu.csprojAssemblyReference.cache

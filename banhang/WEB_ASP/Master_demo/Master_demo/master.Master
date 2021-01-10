@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs"  %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> SÂM HÀN QUỐC</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap/chitietsanpham.css" >
+    <link rel="stylesheet" href="bootstrap/giohangcss.css" >
+    <link rel="stylesheet" href="bootstrap/dathangcss.css" >
+	<link rel="stylesheet" href="bootstrap/file.css" >
+	<script src="bootstrap/jquery.js"></script>
+	<script src="bootstrap/bootstrap.js"></script>
+	<script src="bootstrap/java.js"></script>
+	<style >
+     .anh img{
+
+         width:50px;
+         height:50px;
+     }
+     .chitietsanpham{
+         margin-top:30px;
+         margin-bottom:100px;
+         text-align: center;
+         background-color: black
+     }
+
+     #anh:hover img{
+	    transform: scale(1.5);
+	    transition: 1s;/*Làm chậm trình chiếu*/
+}
+     }
+	 #anh img {
+         width: 100%;
+         height: auto;
+         transition: 1s;
+         border: 5px solid #D17A0C;
+	 }
+     #anh{
+         height: auto;
+         padding: 5px;
+         box-sizing: border-box; /*Đóng khung lại đúng kích thước là 305px*/
+         overflow: hidden;
+         border:4px;
+     }
+     .anh{
+         width:80px;
+         height:100px;
+     }
+    .menu{
+        background-color:black;
+    }
+    .product{
+       margin-right:100px;
+    }
+    .container-fluid {
+        background-color:black
+    }
+	</style>
+</head>
+<body>
+	<div class="container-fluid ">	
+		<div class="menu">
+			<table width="100%" height="20">
+				<tr>
+					<td align="left" width="70%"  style="  padding-top:10px;">
+						<ul>
+						    <li><a href="#"> <asp:HyperLink runat="server" NavigateUrl="~/Home.aspx">TRANG CHỦ</asp:HyperLink> </a></li>
+						    <li><a href="#">GIỚI THIỆU</a></li>
+							<li><a href="">DANH MỤC</a>
+								<ul class="submenu">
+						        	<li><a href="Allproduct.html">Hồng sâm củ khố</a></li>
+						        	<li><a href="Allproduct.html">Rượu sâm</a></li>
+						        	
+						    	</ul>
+							</li>
+						    <li><a href="#">CHẤT LƯỢNG</a>
+						      	<ul class="submenu">
+						        	<li><a href="http://vfa.gov.vn/">Kiểm định</a></li>
+						        	<li><a href="#">Đổi trả </a></li>
+						     	</ul>
+						    </li>
+                            <%
+                    if((Boolean)Session["admin"]==false)
+                    {
+                    %>
+                        <li><a href="login.aspx">Đăng nhập</a></li>
+                        <li><a href="dangky.aspx">Đăng ký</a></li>
+                <% 
+                    }
+                    else
+                    {
+                    %>
+                         <li>Xin chào,<asp:Label ID="lbl_ten" runat="server" Text=""></asp:Label></li>
+                         <li><a href="logout.aspx">Thoát</a></li>
+                         
+                    
+                 <% }%>
+						</ul>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		
+	
+        <asp:ContentPlaceHolder ID="home"  runat="server"></asp:ContentPlaceHolder>
+        <div class="footer">
+                <div class="thongtin">
+                    <p>Vĩnh Long</p>
+                    <p>Long Hồ, Vĩnh Long/p>
+                    <p>02435.66.88.99 - 024.36.555.888 – 09.66.60.61.69</p>
+                </div>
+                <div class="thongtinthem">
+                    <p>Email: thegioidinhduong06@gmail.com</p>
+                    <p><img src="Hinhanh/_dmca_premi_badge_5.png" alt=""></p>
+                </div>
+                <div class="chinhsach">
+                    <p>Chính sách chung</p>
+                    <p>Điều khoản mua hàng</p>
+                    <p>Chính sách bảo mật</p>
+                    <p>Chính sách đổi trả hàng</p>
+                    <p>Hướng dẫn mua hàng</p>
+                    <p>Phương thức thanh toán</p>
+                    <p>Phương thức vận chuyển</p>
+                    <p>Sitemap - Sơ đồ website</p>
+                    <p><img src="Hinhanh/bo-cong-thuong.png" alt=""></p>
+                </div>
+
+        </div>
+        <hr>
+ 
+    </div>
+</body>
+	<script>
+        var slide_index;/* Khai báo biến đại diện cho slide*/
+        function showslide() {
+            var dot = document.getElementsByClassName("dot");
+            var slide = document.getElementsByClassName("slide");
+            for (var i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+            for (var i = 0; i < dot.length; i++) {
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+            slide[slide_index].style.display = "block";
+            dot[slide_index].className += " active";
+            slide_index++;
+            if (slide_index > slide.length - 1) {
+                slide_index = 0;
+
+            }
+            setTimeout(showslide, 3000);
+        }
+        showslide(slide_index = 0);
+
+
+
+	</script>
+</html>

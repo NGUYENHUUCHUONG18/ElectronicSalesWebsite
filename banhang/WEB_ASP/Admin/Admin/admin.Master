@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Admin.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server" >
+        <div >
+            <table  style="width:100%;background-color:"  >
+                <tr>
+                    <td colspan="2" style="text-align:center ; color:#0026ff ; font-size:120% ;">
+                        CHÀO BẠN ĐẾN VỚI TRANG ADMIN
+                    </td>
+                </tr>
+                <tr style="background-color:aquamarine;padding-bottom:50%">
+                    <td style="width:30%">Tên đăng nhập: </td>
+                    <td><a href="#">Đăng xuất</a></td>
+                </tr>
+                <tr style="text-align:start">
+                    <td style=" font-size: 130% ; color:#0026ff">
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" NodeIndent="10" ShowExpandCollapse="False" Font-Bold="True" Font-Names="Arial Black" Font-Size="X-Large" Height="99px" Width="252px">
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" BackColor="#66FFFF" BorderColor="White" BorderWidth="2px" Font-Italic="True" Font-Size="Medium" />
+                            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                            <ParentNodeStyle Font-Bold="False" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                    </td>
+                    <td style="text-align:center">
+                        
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>

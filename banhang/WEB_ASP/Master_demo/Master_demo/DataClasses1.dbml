@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_v1" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-I4FVPU0\SQLEXPRESS;Initial Catalog=DB_v1;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DB_v1ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="MAKHACH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENKHACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAYSINH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DIENTHOAI" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TENTK" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="MATKHAU" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.dangnhap_search" Method="dangnhap_search">
+    <Parameter Name="tentaikhoan" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="matkhau" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="dangnhap_searchResult">
+      <Column Name="ID_KH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAKHACH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TENTK" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MATKHAU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.dangnhap_insert" Method="dangnhap_insert">
+    <Parameter Name="tenkhachhang" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="dienthoai" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="tentaikhoan" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="matkhau" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="diachi" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

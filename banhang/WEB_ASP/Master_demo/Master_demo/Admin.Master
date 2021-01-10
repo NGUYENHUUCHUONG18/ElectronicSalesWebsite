@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Master_demo.Admin1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%; height:100%;" border="1">
+                <tr >
+                    <td colspan="2" style="background:#0ff">
+                        TRANG QUẢN TRỊ
+                    </td>
+                </tr>
+                 <tr >
+                    <td>
+                       <b>Tên tài khoản:</b>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="width:30%">
+                       
+                        <asp:SiteMapDataSource ID="abc" runat="server" />
+                        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="abc"></asp:TreeView>
+
+                    </td>
+                    <td style ="width:70%">  <asp:ContentPlaceHolder ID="Content2"  runat="server"></asp:ContentPlaceHolder></td>
+                </tr>
+            </table>
+        </div>
+      
+    </form>
+</body>
+</html>

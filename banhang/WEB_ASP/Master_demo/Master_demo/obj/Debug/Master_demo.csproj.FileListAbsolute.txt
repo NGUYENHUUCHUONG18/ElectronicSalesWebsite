@@ -1,0 +1,7 @@
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\bin\Master_demo.dll.config
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\bin\Master_demo.dll
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\bin\Master_demo.pdb
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\obj\Debug\Master_demo.csprojAssemblyReference.cache
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\obj\Debug\Master_demo.dll.licenses
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\obj\Debug\Master_demo.dll
+E:\webform\banhang\WEB_ASP\Master_demo\Master_demo\obj\Debug\Master_demo.pdb

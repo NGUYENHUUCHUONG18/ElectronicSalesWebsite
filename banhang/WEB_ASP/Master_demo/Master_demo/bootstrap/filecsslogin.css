@@ -1,0 +1,19 @@
+.container-fluid{
+  	background-image: url("../Hinhanh/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+.backgroud{
+	margin: 150px 600px;
+	border-radius: 10px;background-color: #F4A460;
+    width: 431px;
+    height: 294px;
+}
+
+.form-group{
+	padding: 10px 20px;
+}
+.btn{
+	margin-top: 10px;
+}

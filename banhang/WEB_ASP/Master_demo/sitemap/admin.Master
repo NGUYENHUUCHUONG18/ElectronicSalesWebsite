@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="sitemap.admin1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <table border="1" >
+            <tr style="text-align:center ; background:#0094ff ; font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif"><td colspan="3">CHÀO MỪNG BẠN ĐẾN VỚI TRANG ADMIN</td></tr>
+            <tr>
+                <td>Tên tài khoản: </td>
+                <td><a href="">Đăng xuất</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="background:#0094ff">DANH MỤC CHỈNH SỬA</p>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <p style="color:#808080">Chi tiết chỉnh sửa</p>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

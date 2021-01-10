@@ -1,0 +1,155 @@
+
+.nen{/*
+    background-image: url("../Hinhanh/black-wallpaper-hd_035711445.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+    background-color: #323232;
+}
+#footer {
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  /* background: 
+  color overlay 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    image to overlay
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+   */
+  /* background-image: url(../Hinhanh/slide_Sam1.png);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+   */
+  	
+  	background-color: #FFC125;
+}
+.lencao{
+	color: yellow;
+	float: right;
+	font-size: 20px;
+	margin-top: -10px;
+
+}
+.menu{
+	margin-top: 10px;
+    height: auto; 
+    border: 2px solid red;
+    
+}
+.menu ul{
+	list-style-type: none;
+	text-align: left;
+	height: 50px; 
+	font-size: 18px;
+	font-family: butcherman;
+    margin-top: 10px;
+}
+.menu ul li{
+	color: red;
+	display: inline-table;
+	width: 150px;
+	height: 40px;
+	line-height: 20px;
+	position: relative;
+	
+}
+
+.menu ul li a{
+	color: white;
+	font-size: 15px;
+	font-family: "abril-fatface";
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.menu ul li a:hover{
+	color: red;
+}
+.submenu {
+	display: none;
+	position: absolute;
+	padding: 5px 1px;
+	z-index: 2;
+}
+.submenu li{
+	margin-right:80px;
+	font-size: 16px;
+    background: blue;
+
+}
+.menu ul li:hover .submenu{
+	display: block;
+}
+
+
+#table input,button{
+	border: none;
+}
+.footer{ 
+	text-align: center;
+	background-color: #C8961A;
+    height: auto;
+    width: 100%;
+    display: inline-table;
+}
+.footer_1{
+    text-align: center;
+	background-color: #8CB707;
+    height: auto;
+    width: 100%;
+    display: inline-table;
+}
+.thongtin{
+	display: inline-block;
+	text-align: center;
+}
+.thongtinthem{
+	display: inline-block;
+	text-align: center;
+	margin: 0 300px;
+}
+.chinhsach{
+	display: inline-block;
+	text-align: center;
+}
+/*Phần thông tin khách hàng*/
+.dathang{
+    margin-top: 60px;
+}
+.dathang table {
+   display: inline-table;
+    margin-left: 20px;
+}
+.table{
+    width: 90%;
+    margin-left:100px;
+    margin-top: 10px;
+}
+.table table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: darkgrey;
+}
+
+#khoangcach p{
+   display: inline-table;
+    margin-right: 70px;
+    
+}
+
+#khoangcach input{
+    border: 1px solid solid black;
+    background: none;
+    float: right;
+    margin-right: 15px;
+    
+}
+#khoangcach img{
+    border: none;
+}

@@ -1,0 +1,21 @@
+
+.container-fluid{
+	border: 20px solid red;
+	height: 800px;
+}
+.backgroud{
+	margin: 100px 600px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.form-group{
+	padding: 10px 20px;
+}
+.form-group input[text]{
+	color: red;
+}
+.btn{
+	margin-top: 10px;
+}
+

@@ -1,0 +1,170 @@
+.nen{/*
+    background-image: url("../Hinhanh/black-wallpaper-hd_035711445.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+    background-color: #323232;
+}
+#footer {
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  /* background: 
+  color overlay 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    image to overlay
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+   */
+  /* background-image: url(../Hinhanh/slide_Sam1.png);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+   */
+  	
+  	background-color: #FFC125;
+}
+.lencao{
+	color: yellow;
+	float: right;
+	font-size: 20px;
+	margin-top: -10px;
+
+}
+.menu{
+	margin-top: 10px;
+    height: auto; 
+    
+}
+.menu ul{
+	list-style-type: none;
+	text-align: left;
+	height: 50px; 
+	font-size: 18px;
+	font-family: butcherman;
+    margin-top: 10px;
+}
+.menu ul li{
+	color: red;
+	display: inline-table;
+	width: 150px;
+	height: 40px;
+	line-height: 20px;
+	position: relative;
+	
+}
+
+.menu ul li a{
+	color: white;
+	font-size: 15px;
+	font-family: "abril-fatface";
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.menu ul li a:hover{
+	color: red;
+}
+.submenu {
+	display: none;
+	position: absolute;
+	padding: 5px 1px;
+	z-index: 2;
+}
+.submenu li{
+	margin-right:80px;
+	font-size: 16px;
+    background: blue;
+
+}
+.menu ul li:hover .submenu{
+	display: block;
+}
+
+
+#table input,button{
+	border: none;
+}
+
+
+.footer{ 
+	text-align: center;
+	background-color: #C8961A;
+    height: auto;
+    width: 100%;
+    display: inline-table;
+}
+.footer_1{
+    text-align: center;
+	background-color: #8CB707;
+    height: auto;
+    width: 100%;
+    display: inline-table;
+}
+.thongtin{
+	display: inline-block;
+	text-align: center;
+}
+.thongtinthem{
+	display: inline-block;
+	text-align: center;
+	margin: 0 300px;
+}
+.chinhsach{
+	display: inline-block;
+	text-align: center;
+}
+
+.chitietsanpham {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	background-color: #BABABA;
+}
+.chitietsanpham ul{
+	list-style-type: none;
+	display: inline-table;
+	margin-left: 350px;
+	margin-top: 50px;
+}
+.chitietsanpham ul li{
+	float: left;
+}
+#anh{
+
+	margin-right: 30px;
+}
+.nameproduct{
+	font-size: 30px;
+	color: #3c3c3c;
+}
+#anh img{
+	width: 500px;
+	height: 400px;
+	cursor: move;
+}
+#thongtin b{
+	font-size: 17px;
+}
+#mota{
+	border: dotted;
+	border-color: orange;
+}
+#buyproduct{
+	height: 40px;
+	width: 120px;
+	box-shadow: 10px 10px 10px grey;
+    font-size: 17px;
+}
+a{
+    color: black;
+}
+#buyproduct:hover{
+	color: white;
+    background-color: orange;
+}

@@ -1,0 +1,328 @@
+.nen { /*
+    background-image: url("../Hinhanh/black-wallpaper-hd_035711445.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+    background-color: #323232;
+}
+
+#footer {
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    /* background: 
+  color overlay 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    image to overlay
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+   */
+    /* background-image: url(../Hinhanh/slide_Sam1.png);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+   */
+    background-color: #FFC125;
+}
+
+.lencao {
+    color: yellow;
+    float: right;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.menu {
+    margin-top: 10px;
+    height: auto;
+}
+
+    .menu ul {
+        list-style-type: none;
+        text-align: left;
+        height: 50px;
+        font-size: 18px;
+        font-family: butcherman;
+        margin-top: 10px;
+    }
+
+        .menu ul li {
+            color: red;
+            display: inline-table;
+            width: 150px;
+            height: 40px;
+            line-height: 20px;
+            position: relative;
+        }
+
+            .menu ul li a {
+                color: white;
+                font-size: 15px;
+                font-family: "abril-fatface";
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+
+                .menu ul li a:hover {
+                    color: red;
+                }
+
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 5px 1px;
+    z-index: 2;
+}
+
+    .submenu li {
+        margin-right: 80px;
+        font-size: 16px;
+        background: blue;
+    }
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+
+#table input, button {
+    border: none;
+}
+
+.slide {
+    display: none; /*Ẩn các slide*/
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .dot:hover {
+        background-color: red;
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.slide_show {
+    padding-top: 10px;
+    z-index: -1;
+    height: auto;
+}
+
+.imagesp {
+    text-align: center;
+    height: auto;
+}
+
+.imagesp_2 {
+    text-align: center;
+    height: auto;
+}
+/*Hiệu ứng ảnh*/
+.product {
+    margin: auto 70px;
+}
+
+    .product ul {
+        float: left;
+        text-align: center;
+    }
+
+        .product ul li {
+            list-style-type: none;
+        }
+
+.product_2 {
+    width: 100%;
+    margin: auto 80px;
+}
+
+    .product_2 ul {
+        float: left;
+        text-align: center;
+    }
+
+        .product_2 ul li {
+            list-style-type: none;
+        }
+
+.khoi {
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box; /*Đóng khung lại đúng kích thước là 305px*/
+    overflow: hidden;
+}
+
+    .khoi img {
+        width: 100%;
+        height: auto;
+        transition: 1s;
+        border: 5px solid #D17A0C;
+    }
+
+    .khoi:hover img {
+        transform: scale(1.5);
+        transition: 1s; /*Làm chậm trình chiếu*/
+    }
+
+.footer {
+    text-align: center;
+    background-color: #C8961A;
+    height: auto;
+    width: 100%;
+    display: inline-table;
+    margin-top:50px;
+}
+
+.thongtin {
+    display: inline-block;
+    text-align: center;
+}
+
+.thongtinthem {
+    display: inline-block;
+    text-align: center;
+    margin: 0 300px;
+}
+
+.chinhsach {
+    display: inline-block;
+    text-align: center;
+}
+
+.buynow {
+    float: left;
+    background-color: darkorange;
+    height: 30px;
+    width: 70px;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+
+    .buynow a {
+        color: white;
+        line-height: 20px;
+    }
+
+.Seeproduct {
+    float: right;
+    background-color: darkorange;
+    height: 30px;
+    width: 80px;
+    border: 2px solid red;
+    margin-right: 30px;
+}
+
+    .Seeproduct a {
+        color: white;
+        line-height: 20px;
+    }
+
+.gia, .nameproduct {
+    color: white;
+    font-size: 19px;
+    font-family: "sansita-one";
+}
+
+.buynow_2 {
+    float: left;
+    background-color: darkorange;
+    height: 30px;
+    width: 70px;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+
+    .buynow_2 a {
+        color: white;
+        line-height: 20px;
+    }
+
+.Seeproduct_2 {
+    float: right;
+    background-color: darkorange;
+    height: 30px;
+    width: 80px;
+    border: 2px solid red;
+}
+
+    .Seeproduct_2 a {
+        color: white;
+    }
+
+.gia_2, .nameproduct_2 {
+    color: white;
+    font-size: 19px;
+    font-family: "sansita-one";
+}
+
+body {
+    background-image: url("../Hinhanh/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.backgroud {
+    margin: 150px 600px;
+    border-radius: 10px;
+    background-color: #F4A460;
+}
+
+.form-group {
+    padding: 10px 20px;
+}
+
+.btn {
+    margin-top: 10px;
+}
